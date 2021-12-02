@@ -8,13 +8,13 @@ const TopBrands = () => {
       <h1>Shop Top Brands</h1>
       <div className={styles.brands}>
         <span>
-          <img src="/bose-logo.svg" alt="Bose" />
-        </span>
-        <span>
-          <img src="/msi-logo.svg" alt="MSI" />
+          <img src="/samsung-logo.svg" alt="Samsung" />
         </span>
         <span>
           <img src="/logitech-logo.svg" alt="Logitech" />
+        </span>
+        <span>
+          <img src="/seagate-logo.svg" alt="Seagate" />
         </span>
       </div>
     </section>
