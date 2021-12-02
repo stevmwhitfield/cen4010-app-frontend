@@ -1,0 +1,15 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+@media screen and (min-width: 30em) {
+  .products {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

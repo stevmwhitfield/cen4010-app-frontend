@@ -1,0 +1,115 @@
+#footer {
+  margin-bottom: 64px;
+  padding: 0 24px;
+  padding-top: 48px;
+  background-color: lighten(#262626, 5);
+
+  h1 {
+    font-size: 36px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #ff4500;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: #fff;
+    margin: 4px 0;
+    width: 90%;
+    max-width: 60ch;
+  }
+
+  .about {
+    margin-bottom: 48px;
+  }
+
+  .contact {
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 16px;
+        width: 90%;
+        max-width: 720px;
+
+        span {
+          color: #fff;
+          padding: 4px 0;
+          font-size: 18px;
+          max-width: 20ch;
+        }
+
+        input,
+        textarea {
+          border: none;
+          padding: 8px;
+          border-radius: 8px;
+          width: 90%;
+          max-width: 720px;
+        }
+
+        textarea {
+          margin-bottom: 16px;
+        }
+      }
+
+      button {
+        width: fit-content;
+        border: none;
+        background: none;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        background-color: #ff4500;
+        padding: 0.6em 1.5em;
+        border-radius: 8px;
+        margin-bottom: 24px;
+        transition: 0.3s all;
+
+        &:hover {
+          filter: brightness(0.8);
+        }
+      }
+    }
+  }
+
+  .copyright {
+    padding: 16px 0;
+  }
+}
+
+@media screen and (min-width: 30em) {
+  #footer {
+    margin-bottom: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    p {
+      max-width: 50ch;
+    }
+  }
+}
+
+@media screen and (min-width: 48em) {
+  #footer {
+    p {
+      max-width: 40ch;
+    }
+    .about,
+    .contact {
+      width: 30%;
+    }
+    .content {
+      display: flex;
+      gap: 128px;
+      justify-content: center;
+    }
+  }
+}

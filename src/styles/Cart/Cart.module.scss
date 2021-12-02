@@ -1,0 +1,150 @@
+.main-wrapper {
+  position: relative;
+
+  .heading {
+    h1 {
+      margin: 0;
+      padding: 0;
+
+      margin: 0.6em;
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+      color: #ff4500;
+    }
+  }
+
+  .content-container {
+    width: 85%;
+    max-width: 800px;
+    margin: 0 auto 48px;
+    min-height: 50vh;
+
+    h2 {
+      font-size: 21px;
+      font-weight: bold;
+      font-family: "Montserrat", sans-serif;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .cart-items {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+
+  .checkout-container {
+    position: absolute;
+    z-index: 100;
+    bottom: -48px;
+    left: 0;
+    width: 100vw;
+    background-color: lighten(#262626, 8);
+    padding: 8px 28px 16px;
+
+    .checkout-wrapper {
+      width: 85%;
+
+      h2,
+      p {
+        margin-bottom: 8px;
+      }
+
+      h2 {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+        margin: 0;
+        float: left;
+      }
+
+      p {
+        font-size: 24px;
+        font-weight: lighter;
+        font-family: "Montserrat", sans-serif;
+        color: #fff;
+        float: right;
+      }
+
+      button {
+        background: none;
+        border: none;
+        width: 100%;
+        background-color: #ff4500;
+        border-radius: 8px;
+        color: #fff;
+        font-size: 32px;
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        padding: 8px 0;
+        cursor: pointer;
+        transition: 0.3s all;
+
+        &:hover {
+          background-color: darken(#ff4500, 10);
+        }
+
+        &:active {
+          filter: brightness(0.5);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 30em) {
+  .main-wrapper {
+    margin: 64px;
+
+    .content-container {
+      padding-bottom: 128px;
+      width: 100%;
+    }
+
+    .checkout-container {
+      bottom: -64px;
+      left: -64px;
+      padding-left: 0;
+      padding-right: 0;
+
+      .checkout-wrapper {
+        margin: 0 auto;
+        max-width: 360px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .heading {
+    h1 {
+      font-size: 64px;
+    }
+  }
+  .main-wrapper {
+    margin: 96px;
+
+    .checkout-container {
+      bottom: -96px;
+      left: -96px;
+    }
+  }
+}
+
+@media screen and (min-width: 70em) {
+  .heading {
+    h1 {
+      font-size: 72px;
+    }
+  }
+  .main-wrapper {
+    margin: 128px;
+
+    .checkout-container {
+      bottom: -128px;
+      left: -128px;
+    }
+  }
+}
