@@ -58,7 +58,7 @@ const CheckoutPage = () => {
       console.log("ERROR: Missing form values.");
     }
 
-    return fetch("http://localhost:5000/api/transactions", {
+    return fetch("https://phoenixtech-app.herokuapp.com/api/transactions", {
       method: "POST",
       body: JSON.stringify(formData),
       headers: {

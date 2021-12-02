@@ -20,7 +20,7 @@ const Footer = () => {
       console.log("ERROR: Missing form values.");
     }
 
-    return fetch("http://localhost:5000/api/contact", {
+    return fetch("https://phoenixtech-app.herokuapp.com/api/contact", {
       method: "POST",
       body: JSON.stringify(formData),
       headers: {
