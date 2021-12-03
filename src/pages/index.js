@@ -6,6 +6,7 @@ import Hero from "../components/Home/Hero";
 import TopBrands from "../components/Home/TopBrands";
 import Info from "../components/Home/Info";
 
+// The home page
 const HomePage = () => {
   return (
     <>

@@ -8,13 +8,16 @@ import { cartData } from "../components/Products/ProductList";
 
 import * as styles from "../styles/Cart/Cart.module.scss";
 
+// The cart page
 const CartPage = () => {
+  // Use cartData to create a list of cart items
   const cartItems = cartData;
   const itemCount = cartData.length;
   let totalCost = 0;
+  // Calculate the total cost of items in the cart
   cartItems.forEach((item) => (totalCost += parseFloat(item.price)));
 
-  // does not work
+  // Removes items from the cart - does not work
   const removeItem = (item) => {
     cartItems.filter((cartItem) => cartItem === item);
   };

@@ -3,14 +3,19 @@ import { useState } from "react";
 
 import * as styles from "../../styles/Layout/Footer.module.scss";
 
+// The footer of each page
 const Footer = () => {
+  // Create states for form information
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  // Called when form is submitted
   const handleFormSubmission = (e) => {
+    // Prevents default form actions
     e.preventDefault();
     let formData;
+    // If fields are not empty strings, update formData and reset states
     if (name && email && message) {
       formData = { name, email, message };
       setName("");
@@ -20,6 +25,7 @@ const Footer = () => {
       console.log("ERROR: Missing form values.");
     }
 
+    // Send formData to the API using POST in JSON format
     return fetch("https://phoenixtech-app.herokuapp.com/api/contact", {
       method: "POST",
       body: JSON.stringify(formData),

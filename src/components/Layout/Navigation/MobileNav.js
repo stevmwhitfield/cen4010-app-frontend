@@ -3,6 +3,8 @@ import { Link } from "gatsby";
 
 import * as styles from "../../../styles/Layout/Navigation/MobileNav.module.scss";
 
+// The navigation for mobile screen sizes
+// Navigation is positioned at the bottom of the page
 const MobileNav = () => {
   return (
     <>

@@ -7,7 +7,9 @@ import Head from "../components/Layout/Head";
 
 import * as styles from "../styles/Checkout/Checkout.module.scss";
 
+// The checkout page
 const CheckoutPage = () => {
+  // Create states for form fields
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -18,9 +20,12 @@ const CheckoutPage = () => {
   const [securityCode, setSecurityCode] = useState("");
   const [expirationDate, setExpirationDate] = useState("");
 
+  // Called when form is submitted
   const handleFormSubmission = (e) => {
+    // Override default form actions
     e.preventDefault();
     let formData;
+    // If form fields are not empty, assign fields to formData, and reset states
     if (
       firstName &&
       lastName &&
@@ -58,6 +63,7 @@ const CheckoutPage = () => {
       console.log("ERROR: Missing form values.");
     }
 
+    // Send formData to transactions API using POST in JSON format
     return fetch("https://phoenixtech-app.herokuapp.com/api/transactions", {
       method: "POST",
       body: JSON.stringify(formData),

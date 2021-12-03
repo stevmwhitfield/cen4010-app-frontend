@@ -2,6 +2,7 @@ import React from "react";
 
 import * as styles from "../../styles/Cart/ProductPreview.module.scss";
 
+// Creates a card with an image of the product, its name, and its price.
 const ProductPreview = ({ removeItem, imgSrc, name, price }) => {
   const item = { imgSrc, name, price };
   return (

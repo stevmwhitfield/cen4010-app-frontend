@@ -5,6 +5,7 @@ import Head from "../components/Layout/Head";
 
 import * as styles from "../styles/404/404.module.scss";
 
+// Redirects to this page if the URL does not point to a valid page
 const NotFoundPage = () => {
   return (
     <>

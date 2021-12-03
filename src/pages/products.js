@@ -6,6 +6,7 @@ import ProductList from "../components/Products/ProductList";
 
 import * as styles from "../styles/Products/Products.module.scss";
 
+// The products page
 const ProductsPage = () => {
   return (
     <>

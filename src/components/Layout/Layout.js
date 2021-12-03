@@ -4,7 +4,9 @@ import Footer from "./Footer";
 
 import * as styles from "../../styles/Layout/Layout.module.scss";
 
-const Layout = props => {
+// The layout used in each page
+// Uses the header and footer components
+const Layout = (props) => {
   return (
     <div className={styles.wrapper}>
       <Header />

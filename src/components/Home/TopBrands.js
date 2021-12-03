@@ -2,6 +2,7 @@ import React from "react";
 
 import * as styles from "../../styles/Home/TopBrands.module.scss";
 
+// The TopBrands section of the home page
 const TopBrands = () => {
   return (
     <section id={styles.topBrands}>

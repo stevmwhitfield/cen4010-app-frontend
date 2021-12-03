@@ -1,3 +1,4 @@
+// List of products that display in products page
 export const products = [
   {
     imgSrc: "/images/headphones.png",

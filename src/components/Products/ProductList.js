@@ -5,9 +5,12 @@ import ProductCard from "./ProductCard";
 
 import * as styles from "../../styles/Products/ProductList.module.scss";
 
+// Export cart information to be used in other files
 export let cartData = [];
 
+// Display the products in a grid-like fashion
 const ProductList = () => {
+  // Create a state for cart items
   const [cartItems, setCartItems] = useState([]);
   cartData = cartItems;
   console.log("STATE " + cartItems);

@@ -2,6 +2,8 @@ import React from "react";
 
 import { Helmet } from "react-helmet";
 
+// The head of each page
+// This content is not visible but is used by the browser
 const Head = ({ title, description, url }) => {
   return (
     <Helmet htmlAttributes={{ lang: "en" }}>

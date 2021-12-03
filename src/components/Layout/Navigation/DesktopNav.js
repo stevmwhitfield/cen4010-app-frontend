@@ -3,6 +3,8 @@ import { Link } from "gatsby";
 
 import * as styles from "../../../styles/Layout/Navigation/DesktopNav.module.scss";
 
+// The navigation for desktop screen sizes
+// Navigation is positioned at the top of the page
 const DesktopNav = () => {
   return (
     <>
